@@ -1,0 +1,16 @@
+<!-- templates/accounting/invoice_form.html -->
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+    <meta charset="UTF-8">
+    <title>فرم فاکتور</title>
+</head>
+<body>
+    <h1>فرم فاکتور</h1>
+    <form method="post" enctype="multipart/form-data">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit">ثبت</button>
+    </form>
+</body>
+</html>

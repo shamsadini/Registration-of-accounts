@@ -1,0 +1,16 @@
+<!-- templates/accounting/expense_form.html -->
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+    <meta charset="UTF-8">
+    <title>فرم پرداخت وجه</title>
+</head>
+<body>
+    <h1>فرم پرداخت وجه</h1>
+    <form method="post" enctype="multipart/form-data">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit">ثبت</button>
+    </form>
+</body>
+</html>

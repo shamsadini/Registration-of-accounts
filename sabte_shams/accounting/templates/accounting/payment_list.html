@@ -1,0 +1,16 @@
+<!-- templates/accounting/payment_list.html -->
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+    <meta charset="UTF-8">
+    <title>لیست دریافت وجه</title>
+</head>
+<body>
+    <h1>لیست دریافت وجه</h1>
+    <ul>
+        {% for payment in payments %}
+            <li>{{ payment.invoice_number }} - {{ payment.project_name }}</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>

@@ -1,0 +1,16 @@
+<!-- templates/accounting/statement_list.html -->
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+    <meta charset="UTF-8">
+    <title>لیست صورت وضعیت</title>
+</head>
+<body>
+    <h1>لیست صورت وضعیت</h1>
+    <ul>
+        {% for statement in statements %}
+            <li>{{ statement.invoice_number }} - {{ statement.project_name }}</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>

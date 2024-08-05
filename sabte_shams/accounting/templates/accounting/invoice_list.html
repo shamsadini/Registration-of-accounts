@@ -1,0 +1,16 @@
+<!-- templates/accounting/invoice_list.html -->
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+    <meta charset="UTF-8">
+    <title>لیست فاکتور</title>
+</head>
+<body>
+    <h1>لیست فاکتور</h1>
+    <ul>
+        {% for invoice in invoices %}
+            <li>{{ invoice.invoice_number }} - {{ invoice.project_name }}</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>

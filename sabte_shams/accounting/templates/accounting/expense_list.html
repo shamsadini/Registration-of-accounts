@@ -1,0 +1,16 @@
+<!-- templates/accounting/expense_list.html -->
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+    <meta charset="UTF-8">
+    <title>لیست پرداخت وجه</title>
+</head>
+<body>
+    <h1>لیست پرداخت وجه</h1>
+    <ul>
+        {% for expense in expenses %}
+            <li>{{ expense.invoice_number }} - {{ expense.project_name }}</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>

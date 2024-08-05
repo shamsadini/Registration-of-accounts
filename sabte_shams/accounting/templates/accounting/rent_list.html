@@ -1,0 +1,16 @@
+<!-- templates/accounting/rent_list.html -->
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+    <meta charset="UTF-8">
+    <title>لیست کرایه</title>
+</head>
+<body>
+    <h1>لیست کرایه</h1>
+    <ul>
+        {% for rent in rents %}
+            <li>{{ rent.invoice_number }} - {{ rent.project_name }}</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
